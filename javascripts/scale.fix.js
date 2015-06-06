@@ -1,4 +1,8 @@
 var metas = document.getElementsByTagName('meta');
+var vid = document.getElementById("bgvid");
+function setPlaySpeed() { 
+    vid.playbackRate = 0.5;
+} 
 var i;
 if (navigator.userAgent.match(/iPhone/i)) {
   for (i=0; i<metas.length; i++) {
