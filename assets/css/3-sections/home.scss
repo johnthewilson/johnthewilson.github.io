@@ -1,0 +1,27 @@
+.home-wrap {
+  @include outer-container(2000px);
+  .main-nav { @include span-columns(3); }
+  #loader { @include span-columns(9); }
+}
+
+.home-wrap {
+  height: 100%;
+  width:100%;
+}
+.main-nav {
+  position: fixed;
+  background-color: white;
+  height: 100%;
+}
+#loader {
+  z-index: 1;
+  margin-left: 23%;
+  background-color: #00bdbd;
+}
+.homebase {
+  margin-left: 23%;
+  z-index: 3;
+  background-color: #b3d4fc;
+  height:100%;
+  background-image: url('/assets/img/home-hero.jpg');
+ }
