@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Comfortaa', cursive;
   color: #83b0b9;
   background-color: #343943;
 }
@@ -206,6 +206,7 @@ Navigation
 }
 .cd-section.contact header {
   background-color: #e4b162;
+  overflow:hidden;
 }
 .cd-section .cd-scroll {
   /* this is the arrow at the bottom of the header */
@@ -245,6 +246,12 @@ Navigation
   -moz-transition: -moz-transform 0.5s 0s;
   transition: transform 0.5s 0s;
 }
+.cd-section.visible.index {
+  overflow-y:hidden;
+}
+//.cd-section.visible.index header{
+//  height:80%;
+//}
 .cd-section.visible .cd-scroll {
   visibility: visible;
   -webkit-transform: translateX(-50%) scale(1);
@@ -348,6 +355,9 @@ Navigation
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.cd-title.contact {
+  top:-50%;
 }
 .cd-title span {
   opacity: 0.6;
