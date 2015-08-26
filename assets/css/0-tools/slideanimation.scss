@@ -189,9 +189,13 @@ Navigation
 }
 .cd-section header {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: #83b0b9;
+  //background-image: url("/assets/img/home-hero.jpg");
+  background: #dae3ed;
+  overflow-x: hidden;
+}
+.cd-section.index header {
   overflow: hidden;
 }
 .cd-section.services header {
@@ -315,12 +319,12 @@ Navigation
 }
 .cd-title {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 0;
   /* this prevents title from jumping when the section scroll bar is visible */
   width: calc(100vw - 90px);
   padding: 1em;
-  color: #ffffff;
+  color: #4B5362;
   text-align: center;
   /* Force Hardware Acceleration */
   -webkit-backface-visibility: hidden;
@@ -425,4 +429,52 @@ Navigation
   #cd-loading-bar {
     left: 90px;
   }
+}
+/*
+*
+Code to create the typing effect
+*/
+@-webkit-keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+@-moz-keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
+
+@-moz-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+h1 { font-family: Consolas, monospace; }
+
+h1 {
+  position: relative;
+  float: left;
+  font-size:100%;
+  margin-left: 50%;
+  margin-bottom: 40%;
+}
+h1 span {
+  position:absolute;
+  top:0;
+  right:0;
+  width:0;
+  background: #dae3ed;
+  border-left: .1em solid black;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-animation: typing 10s steps(60, end), /* # of steps = # of characters */
+  blink-caret 1s step-end infinite;
+  -moz-animation: typing 10s steps(60, end), /* # of steps = # of characters */
+  blink-caret 1s step-end infinite;
 }

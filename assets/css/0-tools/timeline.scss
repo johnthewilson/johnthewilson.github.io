@@ -154,13 +154,13 @@ Main components
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  background: #474A4A;
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+  background: #474A4A;
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  background: #474A4A;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -257,6 +257,7 @@ Main components
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  color:grey;
   font-size: 13px;
   font-size: 0.8125rem;
 }
