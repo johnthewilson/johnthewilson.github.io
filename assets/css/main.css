@@ -288,6 +288,150 @@ Navigation
 .cd-section.visible.index {
   overflow-y: hidden; }
 
+.contact-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .contact-content .contact-twitter {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-twitter:last-child {
+      margin-right: 0; }
+  .contact-content .contact-github {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-github:last-child {
+      margin-right: 0; }
+  .contact-content .contact-facebook {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-facebook:last-child {
+      margin-right: 0; }
+  .contact-content .contact-linked {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-linked:last-child {
+      margin-right: 0; }
+  .contact-content .contact-mailto {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-mailto:last-child {
+      margin-right: 0; }
+  .contact-content .contact-resume {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .contact-content .contact-resume:last-child {
+      margin-right: 0; }
+
+/*
+Temporray space for projects*/
+.projects-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .projects-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .projects-wrapper .projects-supply {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .projects-wrapper .projects-supply:last-child {
+      margin-right: 0; }
+  .projects-wrapper .projects-rev {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .projects-wrapper .projects-rev:last-child {
+      margin-right: 0; }
+  .projects-wrapper .projects-vish {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .projects-wrapper .projects-vish:last-child {
+      margin-right: 0; }
+
+.projects-wrapper {
+  height: 80px;
+  margin-top: 20%; }
+
+.projects-wrapper li {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  line-height: 60px; }
+
+/*
+projects showcasing classes
+*/
+.contact-content {
+  height: 80px;
+  margin-top: 20%; }
+
+.contact-content li {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  line-height: 60px; }
+
+.fa-twitter:hover {
+  color: #4DA7DE;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.fa-github:hover {
+  color: #333333;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.fa-facebook:hover {
+  color: #3E5B98;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.fa-linkedin:hover {
+  color: #3371B7;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.fa-envelope:hover {
+  color: #FFFFFF;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.fa-download:hover {
+  color: #423e29;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
 .cd-section.visible .cd-scroll {
   visibility: visible;
   -webkit-transform: translateX(-50%) scale(1);
@@ -869,7 +1013,8 @@ Main components
   top: 2%;
   right: 2%;
   z-index: 10;
-  background-color: #232323; }
+  background-color: #575757;
+  opacity: .9; }
 
 #hexaflip-demo1 .hexaflip-cube,
 #hexaflip-demo2 .hexaflip-cube {

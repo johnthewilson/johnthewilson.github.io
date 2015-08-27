@@ -249,9 +249,82 @@ Navigation
 .cd-section.visible.index {
   overflow-y:hidden;
 }
-//.cd-section.visible.index header{
-//  height:80%;
-//}
+.contact-content{
+  @include outer-container;
+  .contact-twitter { @include span-columns(2);}
+  .contact-github { @include span-columns(2);}
+  .contact-facebook { @include span-columns(2);}
+  .contact-linked { @include span-columns(2);}
+  .contact-mailto { @include span-columns(2);}
+  .contact-resume { @include span-columns(2);}
+}
+/*
+Temporray space for projects*/
+
+.projects-wrapper{
+  @include outer-container;
+  .projects-supply {@include span-columns(2);}
+  .projects-rev {@include span-columns(2);}
+  .projects-vish {@include span-columns(2);}
+}
+
+.projects-wrapper{
+  height:80px;
+  margin-top:20%;
+}
+.projects-wrapper li{
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index:1;
+  line-height: 60px;
+}
+/*
+projects showcasing classes
+*/
+
+.contact-content{
+  height:80px;
+  margin-top:20%;
+}
+.contact-content li{
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index:1;
+  line-height: 60px;
+
+}
+.fa-twitter:hover{
+  color:#4DA7DE;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fa-github:hover{
+  color:#333333;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fa-facebook:hover{
+  color:#3E5B98;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fa-linkedin:hover{
+  color:#3371B7;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fa-envelope:hover{
+  color:#FFFFFF;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fa-download:hover{
+  color: #423e29;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .cd-section.visible .cd-scroll {
   visibility: visible;
   -webkit-transform: translateX(-50%) scale(1);
