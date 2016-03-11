@@ -194,7 +194,7 @@ Home Page styles
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  bottom: 240px;
+  bottom: 320px;
   right: 15px;
   z-index: 99999999; }
   #contact-me li {
@@ -718,7 +718,7 @@ h1 {
 h1.intro-text {
   position: relative;
   font-size: 90%;
-  margin-left: 57%;
+  margin-left: 68%;
   margin-bottom: 40%; }
 
 h1 span {
