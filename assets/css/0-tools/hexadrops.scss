@@ -112,8 +112,8 @@
   top:2%;
   right:2%;
   z-index:10;
-  background-color: #575757;
-  opacity: .9;
+  //background-color: #575757;
+
 }
 #hexaflip-demo1 .hexaflip-cube,
 #hexaflip-demo2 .hexaflip-cube {
@@ -125,7 +125,7 @@
 #hexaflip-demo2 .hexaflip-cube .hexaflip-left,
 #hexaflip-demo1 .hexaflip-cube .hexaflip-right,
 #hexaflip-demo2 .hexaflip-cube .hexaflip-right {
-  background-color: #222 !important;
+ // background-color: #222 !important;
 }
 #hexaflip-demo1 .hexaflip-cube > div,
 #hexaflip-demo2 .hexaflip-cube > div {
@@ -134,11 +134,13 @@
 }
 #hexaflip-demo1 .hexaflip-cube > div:nth-child(1n+1),
 #hexaflip-demo2 .hexaflip-cube > div:nth-child(1n+1) {
-  background-color: #83b0b9;
+  background-color: #4190b6;
+
 }
 #hexaflip-demo1 .hexaflip-cube > div:nth-child(2n+2),
 #hexaflip-demo2 .hexaflip-cube > div:nth-child(2n+2) {
-  background-color: #D35657;
+  background-color: #4190b6;
+
 }
 #hexaflip-demo1 .hexaflip-cube > div:nth-child(3n+3),
 #hexaflip-demo2 .hexaflip-cube > div:nth-child(3n+3) {
@@ -196,7 +198,7 @@
   line-height: 2;
 }
 .hexaflip-cube {
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Gotham Rounded A', Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   cursor: move;

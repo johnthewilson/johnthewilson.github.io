@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
         hexaDemo2,
         hexaDemo3,
         text1 = 'JW'.split(''),
-        text2 = 'FLIP'.split(''),
+        //text2 = 'FLIP'.split(''),
         settings = {
             size: 150,
             margin: 12,

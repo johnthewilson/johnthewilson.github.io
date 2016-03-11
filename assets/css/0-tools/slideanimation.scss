@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Gotham Rounded A','Gotham Rounded B','Helvetica Neue', cursive;
   color: #83b0b9;
   background-color: #343943;
 }
@@ -21,6 +21,34 @@ body {
 a {
   color: #d35657;
   text-decoration: none;
+}
+
+/*--------------------------------
+
+Home Page styles
+
+-----------------------------*/
+
+.about-contact{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.intro-text{
+  font-family: "Gotham SSm","Gotham Rounded A","Helvetica Neue";
+}
+
+#contact-me{
+  position: fixed;
+  display: flex;
+
+  bottom: 240px;
+   right:15px;
+  z-index: 99999999;
+  li{
+    padding: 5px;
+  }
 }
 
 /* --------------------------------
@@ -46,8 +74,27 @@ Navigation
   height: 100%;
   width: -webkit-calc(100% - 4px);
   width: calc(100% - 4px);
-  background-color: #131519;
+  //background-color: #A5B9C1;
 }
+
+  .foot-note{
+    font-size: .8em;
+    color: #4A5261;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+    line-height:10px;
+    z-index: 9999;
+  }
+  #for-hire{
+   font-size: 1.4em;
+    font-weight:700;
+    color: #a2dc76;
+  }
+
+
 .cd-side-navigation ul {
   height: 100%;
   overflow-y: auto;
@@ -93,7 +140,7 @@ Navigation
   right: -4px;
   height: 100%;
   width: 4px;
-  background-color: #83b0b9;
+  background-color: #F1F1F1;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -111,11 +158,11 @@ Navigation
   color: #131519;
 }
 .cd-side-navigation a.selected > svg *, .no-touch .cd-side-navigation a.selected:hover > svg * {
-  stroke: #83b0b9;
+  stroke: #F1F1F1;
 }
 .cd-side-navigation li:nth-of-type(2) .selected > svg *,
 .cd-side-navigation li:nth-of-type(2) .selected:hover > svg * {
-  stroke: #d35657;
+  stroke: #F1F1F1;
 }
 .cd-side-navigation li:nth-of-type(3) .selected > svg *,
 .cd-side-navigation li:nth-of-type(3) .selected:hover > svg * {
@@ -123,16 +170,16 @@ Navigation
 }
 .cd-side-navigation li:nth-of-type(4) .selected > svg *,
 .cd-side-navigation li:nth-of-type(4) .selected:hover > svg * {
-  stroke: #e4b162;
+  stroke: #F1F1F1;
 }
 .cd-side-navigation li:nth-of-type(2) a::after {
-  background-color: #d35657;
+  background-color: #F1F1F1;
 }
 .cd-side-navigation li:nth-of-type(3) a::after {
-  background-color: #343943;
+  background-color: #F1F1F1;
 }
 .cd-side-navigation li:nth-of-type(4) a::after {
-  background-color: #e4b162;
+  background-color: #F1F1F1;
 }
 @media only screen and (min-width: 480px) {
   .cd-side-navigation {
@@ -192,20 +239,20 @@ Navigation
   height: 100%;
   width: 100%;
   //background-image: url("/assets/img/home-hero.jpg");
-  background: #dae3ed;
+  background: #F1F1F1;
   overflow-x: hidden;
 }
 .cd-section.index header {
   overflow: hidden;
 }
 .cd-section.services header {
-  background-color: #d35657;
+  background-color: #F1F1F1;
 }
 .cd-section.projects header {
-  background-color: #343943;
+  background-color: #F1F1F1;
 }
 .cd-section.contact header {
-  background-color: #e4b162;
+  background-color: #F1F1F1;
   overflow:hidden;
 }
 .cd-section .cd-scroll {
@@ -295,35 +342,59 @@ projects showcasing classes
   line-height: 60px;
 
 }
-.fa-twitter:hover{
+.fa-twitter{
   color:#4DA7DE;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.fa-github:hover{
-  color:#333333;
+.fa-twitter:hover{
+  color: #08090B;
+}
+.fa-github{
+  color: #333333;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.fa-facebook:hover{
+.fa-github:hover{
+  color: #333333;
+
+}
+.fa-facebook {
   color:#3E5B98;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.fa-linkedin:hover{
+.fa-facebook:hover{
+  color: #333333;
+
+}
+.fa-linkedin{
   color:#3371B7;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+.fa-linkedin:hover{
+  color: #333333;
+
+}
+.fa-envelope{
+  color: #ffea5f;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .fa-envelope:hover{
-  color:#FFFFFF;
+  color: #333333;
+
+}
+
+.fa-download{
+  color: #423e29;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .fa-download:hover{
-  color: #423e29;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  color: #333333;
+
 }
 .cd-section.visible .cd-scroll {
   visibility: visible;
@@ -538,11 +609,11 @@ Code to create the typing effect
 }
 h1 { font-family: Consolas, monospace; }
 
-h1 {
+h1.intro-text {
   position: relative;
-  float: left;
-  font-size:100%;
-  margin-left: 50%;
+  //float: left;
+  font-size:90%;
+  margin-left: 57%;
   margin-bottom: 40%;
 }
 h1 span {
@@ -550,8 +621,8 @@ h1 span {
   top:0;
   right:0;
   width:0;
-  background: #dae3ed;
-  border-left: .1em solid black;
+  background: #575757;
+  border-left: .1em solid darkslategrey;
 
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -560,4 +631,51 @@ h1 span {
   blink-caret 1s step-end infinite;
   -moz-animation: typing 10s steps(60, end), /* # of steps = # of characters */
   blink-caret 1s step-end infinite;
+}
+/*=-----------------------------------------------
+Full Screen Video
+-------------------------------------------*/
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
 }
