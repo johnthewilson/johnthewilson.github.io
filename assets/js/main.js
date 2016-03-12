@@ -1,8 +1,14 @@
 jQuery(document).ready(function($){
+
 	var timelineBlocks = $('.cd-timeline-block'),
 	offset = 0.8;
  //console.log("code reachable ");
-
+ //    type animation
+    $(".element").typed({
+        strings: ["Hello World", " i am John","I love the Web ", "Visual Designer","Front End Engineer","> $johnwilson"],
+        typeSpeed: 0.1
+    });
+    //type animation test
 	//hide timeline blocks which are outside the viewport
 	hideBlocks(timelineBlocks, offset);
 

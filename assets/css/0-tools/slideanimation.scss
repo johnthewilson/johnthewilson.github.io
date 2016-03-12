@@ -43,7 +43,7 @@ Home Page styles
   position: fixed;
   display: flex;
 
-  bottom: 320px;
+  bottom: 30vh;
    right:15px;
   z-index: 99999999;
   li{
@@ -608,7 +608,23 @@ Code to create the typing effect
   50% { border-color: black }
 }
 h1 { font-family: Consolas, monospace; }
+//Typed JS  Animation----------------------------------
+//------------------------------------------------>
 
+  .element {
+    position: fixed;
+    border: 1px salmon solid;
+
+    //width:500px;
+    bottom: 31vh;
+    right: 291px;
+    margin-left: 25px;
+    font-size: 1.7em;
+    z-index: 99999999999;
+
+  }
+
+//-------------------------------------------------
 h1.intro-text {
   position: relative;
   //float: left;
