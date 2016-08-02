@@ -13,6 +13,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-weight:100;
   font-family: 'Gotham Rounded A','Gotham Rounded B','Helvetica Neue', cursive;
   color: #83b0b9;
   background-color: #343943;
@@ -127,6 +128,201 @@ Navigation
   transform: translateX(-50%);
   top: 1.3em;
 }
+//Note to self: Find the latest CSS HERE
+
+header {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #777777;
+  font-weight: 100;
+  display: flex;
+  flex-direction:row;
+  //border: 1px solid #fafafa;
+  //background: transparent !important;
+   .bio{
+     width: 75%;
+     background: #F1F1F1;
+     padding: 200px 100px 100px 100px;
+     text-align: right;
+     //border-right: 1px solid #fafafa;
+     .name {
+       font-weight: 400;
+       font-size: 1.7rem;
+     }
+     img {
+       padding : 10px;
+       margin-right: 5px;
+     }
+     .bio-info{
+       text-align:justify;
+       text-justify:inter-word;
+     }
+     p {
+       padding : 10px;
+       .contact-resume{
+         font-size: 1rem;
+         .fa {
+           padding-right: 5px;
+         }
+       }
+        
+     }
+
+     img {
+       height: 50px;
+       width: 50px;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       border-radius: 50%;
+       border: 1px solid #cacaca;
+       padding:0 !important;
+     }
+     .social-links-items{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-end;
+       li{
+         cursor: pointer;
+         padding-left: 10px;
+       }
+
+     }
+
+   }
+  .bio-portfolio {
+    width:30%;
+    //background: transparent;
+    display: flex;
+    flex-direction:column;
+    .place {
+      margin-left : 1px;
+      width: 100%;
+      height: 100%;
+      //opacity: 0.5;
+      background: #FAFAFA;
+      display: flex;
+      flex-direction:row;
+      justify-content:flex-start;
+      align-items:center;
+      #skill{
+        margin-top: 265px;
+        margin-left: -2px;
+        list-style: none;
+        width: 100%;
+        position: relative;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
+        li {
+          margin-bottom:50px;
+          background:#e9e5e2;
+          height:5px;
+          h3{
+            position:relative;
+            top:-25px;
+            padding-left: 3px;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+          }
+        }
+        .bar {
+          height:5px;
+          margin:1px 2px;
+          position:absolute;
+        }
+      }
+      .graphic-design {
+        width:90%;
+        -moz-animation:graphic-design 2s ease-out;
+        -webkit-animation:graphic-design 2s ease-out;
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      .html-css {
+        width:90%;
+        -moz-animation:html-css 2s ease-out;
+        -webkit-animation:html-css 2s ease-out;
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      .jquery {
+        width:65%;
+        -moz-animation:jquery 2s ease-out;
+        -webkit-animation:jquery 2s ease-out;
+
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .react {
+        width:50%;
+        -moz-animation:react 2s ease-out;
+        -webkit-animation:react 2s ease-out;
+
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .angular {
+        width:90%;
+        -moz-animation:angular 2s ease-out;
+        -webkit-animation:angular 2s ease-out;
+
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      .wordpress {
+        width:77%;
+        -moz-animation:wordpress 2s ease-out;
+        -webkit-animation:wordpress 2s ease-out;
+
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .project {
+        width:90%;
+        -moz-animation:project 2s ease-out;
+        -webkit-animation:project 2s ease-out;
+
+        background: #43cea2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      @-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:90%;}  }
+      @-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+      @-moz-keyframes react      { 0%  { width:0px;} 100%{ width:50%;}  }
+      @-moz-keyframes angular      { 0%  { width:0px;} 100%{ width:90%;}  }
+      @-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:77%;}  }
+      @-moz-keyframes project   { 0%  { width:0px;} 100%{ width:90%;}  }
+
+      @-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:90%;}  }
+      @-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+      @-webkit-keyframes react      { 0%  { width:0px;} 100%{ width:50%;}  }
+      @-webkit-keyframes angular      { 0%  { width:0px;} 100%{ width:90%;}  }
+      @-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:77%;}  }
+      @-webkit-keyframes project   { 0%  { width:0px;} 100%{ width:90%;}  }
+    }
+  }
+}
+
+//
 .cd-side-navigation a svg * {
   -webkit-transition: stroke 0.2s;
   -moz-transition: stroke 0.2s;
